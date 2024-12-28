@@ -13,7 +13,7 @@ class LoginForm extends GetView<LoginController> {
   @override
   Widget build(BuildContext context) {
     return Form(
-        // key: controller.loginFormKey,
+        key: controller.loginFormKey,
         child: Padding(
       padding: const EdgeInsets.symmetric(vertical: AppSizes.spaceBtwSections),
       child: Column(
@@ -38,7 +38,7 @@ class LoginForm extends GetView<LoginController> {
           SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                  onPressed: () => controller.login(),
+                  onPressed: () => controller.userLogin(),
                   child: const Text(AppTextStrings.signIn))),
           const SizedBox(height: AppSizes.spaceBtwSections),
         ],

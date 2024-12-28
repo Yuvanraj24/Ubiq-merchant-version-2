@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:ubiqmerchant_version_2/core/constants/app_sizes.dart';
 import 'package:ubiqmerchant_version_2/presentation/authentication/screens/login/widgets/login_form.dart';
 import 'package:ubiqmerchant_version_2/presentation/authentication/screens/login/widgets/login_header.dart';
@@ -24,9 +23,7 @@ class LoginView extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const LoginHeader(),
-                    LoginForm(),
-
-                    const SizedBox(height: AppSizes.spaceBtwSections),
+                    const LoginForm(),
                   ]),
             )
         ),

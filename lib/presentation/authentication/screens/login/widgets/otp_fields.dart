@@ -12,10 +12,10 @@ class OtpFieldsWidget extends StatelessWidget {
     return OtpTextField(
       numberOfFields: 4,
       handleControllers: (controllers) {
-        controllers[0]!.text = "1";
-        controllers[1]!.text = "0";
-        controllers[2]!.text = "3";
-        controllers[3]!.text = "2";
+        // controllers[0]!.text = "1";
+        // controllers[1]!.text = "0";
+        // controllers[2]!.text = "3";
+        // controllers[3]!.text = "2";
       },
       borderColor: const Color(0xFF512DA8),
       //set to true to show as box or false to show as dash

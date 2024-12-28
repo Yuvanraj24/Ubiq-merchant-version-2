@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ubiqmerchant_version_2/core/routes/pages.dart';
-import 'package:ubiqmerchant_version_2/core/theme/custom_themes/appbar_theme.dart';
 import 'package:ubiqmerchant_version_2/core/theme/theme.dart';
 
 Future <void> main() async {
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       theme: SiajAppTheme.lightTheme,
       getPages: AppPages.routes,
-      initialRoute: Routes.splash,
+      initialRoute: Routes.splash
     );
   }
 }
