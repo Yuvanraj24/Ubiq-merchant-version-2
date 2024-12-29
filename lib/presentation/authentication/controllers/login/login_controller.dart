@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:ubiqmerchant_version_2/core/assets/images.dart';
 import 'package:ubiqmerchant_version_2/core/assets/texts.dart';
+import 'package:ubiqmerchant_version_2/core/routes/pages.dart';
 import 'package:ubiqmerchant_version_2/data/api/services/auth_service.dart';
 import 'package:ubiqmerchant_version_2/data/api/services/network_manager/network_manager.dart';
 import 'package:ubiqmerchant_version_2/presentation/authentication/model/login/login_model.dart';
@@ -150,6 +151,11 @@ class LoginController extends GetxController {
 
     print("valid is end ---> ${isValidLogin.value}");
 
+  }
+
+  userLogout(){
+    AppLocalStorageFunctions.clearAllData();
+    Get.offAllNamed(Routes.login);
   }
 
 }
