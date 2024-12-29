@@ -18,7 +18,8 @@ class MainView extends GetView<MainController> {
               onDestinationSelected: (index) => controller.selectedIndex.value = index,
               backgroundColor: AppColors.light,
               indicatorColor:  AppColors.primaryColor.withValues(alpha:.1),
-              destinations:  controller.iconTabs)
+              destinations:  controller.iconTabs
+              )
       )
     );
   }

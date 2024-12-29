@@ -9,7 +9,7 @@ class NetworkManager extends GetxController {
   static NetworkManager get instance => Get.find();
 
   final Connectivity _connectivity = Connectivity();
-  late StreamSubscription<ConnectivityResult> _connectivitySubscription;
+  StreamSubscription<ConnectivityResult>? _connectivitySubscription;
   final Rx<ConnectivityResult> _connectionStatus = ConnectivityResult.none.obs;
 
   /// Initialize the network manager and set up a stream to continually check the connection status
@@ -51,7 +51,7 @@ class NetworkManager extends GetxController {
   void onClose() {
     // TODO: implement onClose
     super.onClose();
-    _connectivitySubscription.cancel();
+    _connectivitySubscription!.cancel();
   }
 
 

@@ -8,10 +8,10 @@ class SiajElevatedButtonTheme {
     style: ElevatedButton.styleFrom(
       elevation: 0,
       foregroundColor: Colors.white,
-      backgroundColor: AppColors.darkPurple,
-      disabledForegroundColor: Colors.grey,
-      disabledBackgroundColor: Colors.grey,
-      side:  const BorderSide(color: AppColors.darkPurple),
+      backgroundColor: AppColors.primaryColor,
+      disabledForegroundColor: AppColors.appWhite,
+      disabledBackgroundColor: AppColors.primaryColor.withValues(alpha: .5),
+      side: BorderSide(color: AppColors.primaryColor.withValues(alpha: .5)),
       padding: const EdgeInsets.symmetric(vertical: 18),
       textStyle: const TextStyle(fontSize: 16,color: Colors.white, fontWeight: FontWeight.w600),
       // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))

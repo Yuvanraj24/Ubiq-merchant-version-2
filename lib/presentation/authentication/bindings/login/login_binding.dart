@@ -5,7 +5,7 @@ class LoginBinding extends Bindings {
   @override
   void dependencies() {
     // TODO: implement dependencies
-    Get.put(LoginController());
+    Get.put(LoginController(),permanent: true);
   }
 
 }

@@ -14,6 +14,8 @@ class AuthTextFormField extends StatelessWidget {
      this.prefixOnTap,
      this.suffixOnTap,
 
+     this.onChange,
+
      this.textMaxLines = 1,
      this.textMaxLength,
      this.textInputType,
@@ -32,6 +34,7 @@ class AuthTextFormField extends StatelessWidget {
 
   final Function()? prefixOnTap;
   final Function()? suffixOnTap;
+  final Function(String)? onChange;
 
 
 
@@ -60,6 +63,7 @@ class AuthTextFormField extends StatelessWidget {
       ),
       inputFormatters: fieldInputFormatters,
       obscureText: textHide,
+      onChanged: onChange,
     );
   }
 }

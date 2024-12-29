@@ -26,6 +26,7 @@ class LoginForm extends GetView<LoginController> {
             fieldLabelText: AppTextStrings.phoneNo,
             fieldInputFormatters: SiajValidator.mobileNumberInputFormatters,
             textMaxLength: 10,
+            onChange: (v) => v.length == 10 ? controller.isUserFoundTrigger() : null,
           ),
           const SizedBox(height: AppSizes.spaceBtwInputFields),
 
@@ -38,7 +39,7 @@ class LoginForm extends GetView<LoginController> {
           SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                  onPressed: () => controller.userLogin(),
+                  onPressed: controller.userLoginTrigger ,
                   child: const Text(AppTextStrings.signIn))),
           const SizedBox(height: AppSizes.spaceBtwSections),
         ],

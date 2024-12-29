@@ -56,6 +56,11 @@ class AppTextStrings {
   static const String otpSubTitle = 'Enter the verification code that we sent to your email id.';
 
 
+  /// Errors
+  static const String loginFailed = "Login Failed";
+  static const String somethingWentWrong = 'Something went wrong';
+
+
 
 
 }

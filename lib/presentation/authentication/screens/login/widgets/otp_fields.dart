@@ -20,9 +20,14 @@ class OtpFieldsWidget extends GetView<LoginController> {
       showFieldAsBox: true,
       inputFormatters: SiajValidator.mobileNumberInputFormatters,
       fieldWidth: 50,
-      onCodeChanged: (String code) {},
+      onCodeChanged: (String code) {
+        print("code is $code");
+        controller.checkIsLoginValid();
+      },
       onSubmit: (String verificationCode){
         /// After OTP submission
+        controller.checkIsLoginValid();
+        print("submit code $verificationCode");
       }
     );
   }

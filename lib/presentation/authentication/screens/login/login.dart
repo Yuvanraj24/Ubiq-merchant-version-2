@@ -14,9 +14,9 @@ class LoginView extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(
                   top: AppSizes.appBarHeight * 4,
-                  left: AppSizes.defaultSpace,
+                  left: AppSizes.defaultSpace * 2,
                   bottom: AppSizes.defaultSpace,
-                  right: AppSizes.defaultSpace
+                  right: AppSizes.defaultSpace * 2
               ),
               child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,

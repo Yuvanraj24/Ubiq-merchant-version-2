@@ -10,7 +10,7 @@ class LoginModel {
     success = json['success'];
     message = json['message'];
     data = json['data'];
-    user = json['user'] != null ? User.fromJson(json['user']) : null;
+    user = json['user'] != null && json['user'] != '' ? User.fromJson(json['user']) : null;
   }
 
   Map<String, dynamic> toJson() {

@@ -21,6 +21,8 @@ class AppPages {
     GetPage(
         name: _Paths.login, binding: LoginBinding(), page: () => LoginView()),
     GetPage(
-        name: _Paths.mainView, binding: MainBinding(), page: () => const MainView())
+        name: _Paths.mainView,
+        binding: MainBinding(),
+        page: () => const MainView())
   ];
 }
