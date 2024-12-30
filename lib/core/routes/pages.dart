@@ -3,6 +3,8 @@ import 'package:ubiqmerchant_version_2/presentation/authentication/bindings/logi
 import 'package:ubiqmerchant_version_2/presentation/authentication/screens/login/login.dart';
 import 'package:ubiqmerchant_version_2/presentation/main/bindings/main_binding.dart';
 import 'package:ubiqmerchant_version_2/presentation/main/view/main_view.dart';
+import 'package:ubiqmerchant_version_2/presentation/personalization/bidings/profile/profile_binding.dart';
+import 'package:ubiqmerchant_version_2/presentation/personalization/screens/profile.dart';
 import 'package:ubiqmerchant_version_2/presentation/splash/binding.dart';
 import 'package:ubiqmerchant_version_2/presentation/splash/splash_view.dart';
 
@@ -23,6 +25,10 @@ class AppPages {
     GetPage(
         name: _Paths.mainView,
         binding: MainBinding(),
-        page: () => const MainView())
+        page: () => const MainView()),
+    GetPage(
+        name: _Paths.profileView,
+        binding: ProfileBinding(),
+        page: () => ProfileView())
   ];
 }

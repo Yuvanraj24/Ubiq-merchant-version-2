@@ -8,19 +8,21 @@ class MainView extends GetView<MainController> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Obx(() => controller.screens[controller.selectedIndex.value]),
-      bottomNavigationBar: Obx(
-              () => NavigationBar(
-              height: 80,
-              elevation: 0,
-              selectedIndex: controller.selectedIndex.value,
-              onDestinationSelected: (index) => controller.selectedIndex.value = index,
-              backgroundColor: AppColors.light,
-              indicatorColor:  AppColors.primaryColor.withValues(alpha:.1),
-              destinations:  controller.iconTabs
-              )
-      )
+    return SafeArea(
+      child: Scaffold(
+        body: Obx(() => controller.screens[controller.selectedIndex.value]),
+        bottomNavigationBar: Obx(
+                () => NavigationBar(
+                height: 80,
+                elevation: 0,
+                selectedIndex: controller.selectedIndex.value,
+                onDestinationSelected: (index) => controller.selectedIndex.value = index,
+                backgroundColor: AppColors.light,
+                indicatorColor:  AppColors.primaryColor.withValues(alpha:.1),
+                destinations:  controller.iconTabs
+                )
+        )
+      ),
     );
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:ubiqmerchant_version_2/core/routes/pages.dart';
+import 'package:ubiqmerchant_version_2/presentation/personalization/screens/profile.dart';
 import 'package:ubiqmerchant_version_2/utils/local_storage/functions/app_storage_functions.dart';
 
 class MainController extends GetxController {
@@ -14,9 +15,9 @@ class MainController extends GetxController {
     super.onInit();
   }
 
-  final RxInt selectedIndex = 0.obs;
+  final RxInt selectedIndex = 3.obs;
 
-  final screens = [
+  final List<Widget> screens = [
     Center(child: InkWell(
         onTap: (){
           AppLocalStorageFunctions.clearAllData();
@@ -26,7 +27,7 @@ class MainController extends GetxController {
         child: Text("Home"))),
     Center(child: Text("Store")),
     Center(child: Text("Cart")),
-    Center(child: Text("Profile")),
+    ProfileView()
   ];
 
   final iconTabs = <NavigationDestination>[

@@ -6,4 +6,6 @@ class AppImages {
   /// Animations
   static const String loginLoaderLottie = 'assets/images/animations/auth_login_lottie.json';
 
+  static const String cameraIcon = 'assets/icons/camera_icon.svg';
+
 }

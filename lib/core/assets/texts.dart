@@ -30,7 +30,6 @@ class AppTextStrings {
   static const String orSignInWith = "or sign in with";
   static const String orSignUpWith = "or sign up with";
   static const String iAgreeTo = "I agree to";
-  static const String privacyPolicy = "Privacy Policy";
   static const String termsOfUse = "Terms of use";
   static const String verificationCode = "verificationCode";
   static const String resendEmail = "Resend Email";
@@ -61,6 +60,13 @@ class AppTextStrings {
   static const String somethingWentWrong = 'Something went wrong';
 
 
+  /// Profile Tile texts
+  static const String orderHistory = "Order History";
+  static const String privacyPolicy = "Privacy Policy";
 
+  static const String faq = "FAQ";
+  static const String termsAndConditions = "Terms & Conditions";
+  static const String share = "Share";
+  static const String logout = "Logout";
 
 }

@@ -42,8 +42,7 @@ class LoginForm extends GetView<LoginController> {
                   onPressed: controller.userLoginTrigger ,
                   child: const Text(AppTextStrings.signIn))),
           const SizedBox(height: AppSizes.spaceBtwSections),
-        ],
-      ),
+        ])
     ));
   }
 }

@@ -7,6 +7,9 @@ abstract class Routes {
   static const onboarding = _Paths.onboarding;
   static const login = _Paths.login;
   static const mainView = _Paths.mainView;
+
+  /// Bottom Bar screens
+  static const profileView = _Paths.profileView;
 }
 
 abstract class _Paths {
@@ -14,4 +17,7 @@ abstract class _Paths {
   static const onboarding = '/onboarding';
   static const login = '/login';
   static const mainView = '/mainView';
+
+  /// Bottom Bar screens
+  static const profileView = '/profileView';
 }
