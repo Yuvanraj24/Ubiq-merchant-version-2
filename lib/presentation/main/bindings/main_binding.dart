@@ -4,7 +4,7 @@ import 'package:ubiqmerchant_version_2/presentation/main/controllers/main_contro
 class MainBinding extends Bindings {
   @override
   void dependencies() {
-    Get.put(MainController(),permanent: true);
+    Get.put(MainController());
   }
 
 }

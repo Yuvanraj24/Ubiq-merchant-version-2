@@ -39,7 +39,7 @@ class LoginForm extends GetView<LoginController> {
           SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                  onPressed: () => controller.userLoginTrigger() ,
+                  onPressed: controller.userLoginTrigger ,
                   child: const Text(AppTextStrings.signIn))),
           const SizedBox(height: AppSizes.spaceBtwSections),
         ],

@@ -97,12 +97,7 @@ class LoginController extends GetxController {
     }}
 
   userLoginTrigger() async {
-    print("object");
     try {
-
-      // Start Loading
-      SiajFullScreenLoader.openLoadingDialog(
-          "Logging you in...", AppImages.loginLoaderLottie);
 
       // Check Internet Connectivity
       final isConnected = await NetworkManager.instance.isConnected();
@@ -119,11 +114,6 @@ class LoginController extends GetxController {
         AuthService.screenRedirect();
 
       }
-
-      Future.delayed(Duration(seconds: 2),() {
-        // Remove Loader
-        SiajFullScreenLoader.stopLoading();
-      },);
 
     } catch(e) {
       // show some Generic Error to the user

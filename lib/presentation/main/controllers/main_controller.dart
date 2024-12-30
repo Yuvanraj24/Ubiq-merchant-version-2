@@ -5,6 +5,15 @@ import 'package:ubiqmerchant_version_2/core/routes/pages.dart';
 import 'package:ubiqmerchant_version_2/utils/local_storage/functions/app_storage_functions.dart';
 
 class MainController extends GetxController {
+
+  static MainController get instance => Get.find();
+
+  @override
+  void onInit() {
+    // TODO: implement onInit
+    super.onInit();
+  }
+
   final RxInt selectedIndex = 0.obs;
 
   final screens = [
