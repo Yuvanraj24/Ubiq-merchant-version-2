@@ -17,6 +17,7 @@ class LoginForm extends GetView<LoginController> {
         child: Padding(
       padding: const EdgeInsets.symmetric(vertical: AppSizes.spaceBtwSections),
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
           /// Mobile Number
           AuthTextFormField(

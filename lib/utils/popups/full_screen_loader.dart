@@ -17,12 +17,7 @@ class SiajFullScreenLoader {
             : AppColors.light,
         width: double.infinity,
         height: double.infinity,
-        child: Column(
-          children: [
-            const SizedBox(height: 250),
-            SiajAnimationLoaderWidget(text: text, animation: animation)
-          ],
-        ),
+        child: SiajAnimationLoaderWidget(text: text, animation: animation)
       )),
     );
   }

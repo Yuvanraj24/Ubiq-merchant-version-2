@@ -13,7 +13,7 @@ class LoginView extends StatelessWidget {
         body: SingleChildScrollView(
             child: Padding(
               padding: const EdgeInsets.only(
-                  top: AppSizes.appBarHeight * 4,
+                  top: AppSizes.appBarHeight,
                   left: AppSizes.defaultSpace * 2,
                   bottom: AppSizes.defaultSpace,
                   right: AppSizes.defaultSpace * 2
