@@ -36,6 +36,10 @@ class AppTextStrings {
   static const String resendEmailIn = "Resend email in";
 
 
+  static const String search = "Search";
+  static const String by = "by";
+  static const String searchByOrderNumber = "$search $by order number";
+
   static const String congrats = "Congrats";
   static const String accountIsReady = "Your account is ready to use";
   static const String signUpCongratsBtnText = "Go to Homepage";

@@ -1,11 +1,9 @@
 import 'package:get/get.dart';
-import 'package:ubiqmerchant_version_2/core/constants/storage_keys.dart';
 import 'package:ubiqmerchant_version_2/core/routes/pages.dart';
 import 'package:ubiqmerchant_version_2/data/api/core/api_constants.dart';
 import 'package:ubiqmerchant_version_2/data/api/core/api_handler.dart';
 import 'package:ubiqmerchant_version_2/data/api/core/api_response_model.dart';
 import 'package:ubiqmerchant_version_2/utils/local_storage/functions/app_storage_functions.dart';
-import 'package:ubiqmerchant_version_2/utils/local_storage/functions/storage_functions.dart';
 
 class AuthService {
 
@@ -46,5 +44,9 @@ class AuthService {
     }
   }
 
+  static logout(){
+    AppLocalStorageFunctions.clearAllData();
+    Get.offAllNamed(Routes.login);
+  }
 
 }
