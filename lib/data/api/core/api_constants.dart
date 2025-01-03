@@ -3,7 +3,11 @@ class ApiConstants {
 
   // Endpoints
   static const String login = "/merchant/check-user";
-  static const String register = "/auth/register";
-  static const String products = "/products";
-  static const String productDetails = "/products/{id}";
+
+  static const String orderHistoryList = "/merchant/merchant-order-history";
+
+  static const String orderStatusChange = "/merchant/merchant-change-order-status";
+  static const String orderDetail = "/show-invoice-pdf";
+
+
 }

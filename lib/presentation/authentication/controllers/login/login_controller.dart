@@ -7,13 +7,14 @@ import 'package:ubiqmerchant_version_2/core/routes/pages.dart';
 import 'package:ubiqmerchant_version_2/data/api/services/auth_service.dart';
 import 'package:ubiqmerchant_version_2/data/api/services/network_manager/network_manager.dart';
 import 'package:ubiqmerchant_version_2/presentation/authentication/model/login/login_model.dart';
-import 'package:ubiqmerchant_version_2/presentation/splash/controller.dart';
 import 'package:ubiqmerchant_version_2/utils/local_storage/functions/app_storage_functions.dart';
 import 'package:ubiqmerchant_version_2/widgets_common/custom_toasts/toasts.dart';
 
 import '../../../../utils/popups/full_screen_loader.dart';
 
 class LoginController extends GetxController {
+
+  static LoginController get instance => Get.find();
 
   final mobileNoController = TextEditingController();
   RxList<TextEditingController?> otpControllers = RxList(<TextEditingController?>[]);
