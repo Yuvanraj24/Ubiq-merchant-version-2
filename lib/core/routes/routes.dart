@@ -10,6 +10,9 @@ abstract class Routes {
 
   /// Bottom Bar screens
   static const profileView = _Paths.profileView;
+
+  /// Profile Menu screens
+  static const shopOrderHistory = _Paths.shopOrderHistory;
 }
 
 abstract class _Paths {
@@ -20,4 +23,7 @@ abstract class _Paths {
 
   /// Bottom Bar screens
   static const profileView = '/profileView';
+
+  /// Profile Menu screens
+  static const shopOrderHistory = '/showOrderHistory';
 }

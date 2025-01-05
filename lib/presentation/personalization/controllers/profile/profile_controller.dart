@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:ubiqmerchant_version_2/core/assets/texts.dart';
+import 'package:ubiqmerchant_version_2/core/routes/pages.dart';
 import 'package:ubiqmerchant_version_2/data/api/services/auth_service.dart';
 
 class ProfileController extends GetxController {
@@ -56,7 +57,9 @@ class ProfileController extends GetxController {
     }
   }
 
-  orderHistory() {}
+  orderHistory() {
+    Get.toNamed(Routes.shopOrderHistory);
+  }
 
   privacyPolicy() {}
 

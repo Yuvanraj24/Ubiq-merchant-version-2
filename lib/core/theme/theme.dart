@@ -32,7 +32,7 @@ class SiajAppTheme {
     inputDecorationTheme: SiajTextFormFieldTheme.lightInputDecorationTheme,
     textTheme: SiajTextTheme.lightTextTheme,
     iconTheme: IconThemeData(
-      color: AppColors.appWhite
+      color: AppColors.appBlack
     )
 
   );
@@ -52,5 +52,8 @@ class SiajAppTheme {
     outlinedButtonTheme: SiajOutlinedButtonTheme.darkOutlinedButtonTheme,
     inputDecorationTheme: SiajTextFormFieldTheme.darkInputDecorationTheme,
     textTheme: SiajTextTheme.darkTextTheme,
+      iconTheme: IconThemeData(
+          color: AppColors.appWhite
+      )
   );
 }

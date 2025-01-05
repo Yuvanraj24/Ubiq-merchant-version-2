@@ -30,10 +30,11 @@ class MainController extends GetxController {
     ProfileView()
   ];
 
-  final iconTabs = <NavigationDestination>[
+  final iconTabs = <NavigationDestination> [
       NavigationDestination(icon: Icon(Iconsax.home), label: "Home"),
       NavigationDestination(icon: Icon(Iconsax.shop), label: "Store"),
-      NavigationDestination(icon: Icon(Iconsax.shopping_cart), label: "Wishlist"),
+      NavigationDestination(icon: Icon(Iconsax.shopping_cart), label: "Cart"),
       NavigationDestination(icon: Icon(Iconsax.user), label: "Profile"),
   ];
+
 }
