@@ -4,6 +4,7 @@ import 'package:ubiqmerchant_version_2/data/api/core/api_response_model.dart';
 
 class AppInfoApiRepository {
 
+  /// Get FAQ list api
   static Future<ApiResponseModel> faqListApi() async {
     final response = await ApiHandler.get(ApiConstants.orderHistoryList);
 
