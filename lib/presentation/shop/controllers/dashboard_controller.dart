@@ -7,8 +7,7 @@ class DashboardController extends GetxController {
 
   /// Order
   static final List<OrderModel> orders = [
-    OrderModel("001",
-        "Processing", "240.00", "24/12/2000", "12.35 pm")
+    OrderModel("001", "Processing", "240.00", "24/12/2000", "12.35 pm")
   ];
 
   @override
@@ -18,12 +17,13 @@ class DashboardController extends GetxController {
   }
 }
 
-
 class OrderModel {
   final String id;
   final String status;
   final String totalAmount;
   final String orderDate;
   final String deliveryTime;
-  OrderModel(this.id,this.status, this.totalAmount, this.orderDate, this.deliveryTime);
+
+  OrderModel(this.id, this.status, this.totalAmount, this.orderDate,
+      this.deliveryTime);
 }

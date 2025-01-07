@@ -5,6 +5,7 @@ import 'package:ubiqmerchant_version_2/core/assets/texts.dart';
 import 'package:ubiqmerchant_version_2/core/constants/app_sizes.dart';
 import 'package:ubiqmerchant_version_2/core/theme/color.dart';
 import 'package:ubiqmerchant_version_2/widgets_common/custom_fields/custom_textformfield.dart';
+import 'package:ubiqmerchant_version_2/widgets_common/custom_shapes/containers/rounded_container.dart';
 
 class ShopOrderHistoryView extends StatelessWidget {
   const ShopOrderHistoryView({super.key});
@@ -41,7 +42,7 @@ class ShopOrderHistoryView extends StatelessWidget {
                       return OrderContainer();
                     },
                     separatorBuilder: (context, index) =>
-                    const SizedBox(height: 10)),
+                    const SizedBox(height: AppSizes.spaceBtwItems)),
               )
             ],
           )),
@@ -57,32 +58,22 @@ class OrderContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () { },
-      child: Container(
-        padding: const EdgeInsets.all(16.0),
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16),
-            color: Colors.white,
-            border: Border.all(color: Colors.black12),
-            boxShadow: const [
-              BoxShadow(
-                color: Colors.grey,
-                offset: Offset(0, 2),
-                blurRadius: 2,
-                spreadRadius: 0,
-              )
-            ]),
+      onTap: () {},
+      child: SiajRoundedContainer(
+        showBorder: true,
+        padding: EdgeInsets.all(AppSizes.defaultSpace - 10),
         child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               ///Parent Row 1
               textRowWithRightICon(context),
-              const SizedBox(height: 10),
+
+              const SizedBox(height: AppSizes.spaceBtwItems),
 
               ///Parent Row 2
               shopAndPriceRow(context)
             ]),
-      ),
+      )
     );
   }
 
@@ -155,7 +146,7 @@ class OrderContainer extends StatelessWidget {
     return Row(children: [
               ///1 - Icon
               const Icon(Iconsax.ship),
-              const SizedBox(width: 10),
+              const SizedBox(width: AppSizes.spaceBtwItems / 2),
 
               /// 2 - Status & Date
               Expanded(
@@ -166,16 +157,13 @@ class OrderContainer extends StatelessWidget {
                     children: [
                       Text("Order Placed",
                         style: Theme.of(context)
-                            .textTheme
-                            .bodyLarge!
+                            .textTheme.bodyLarge!
                             .apply(
-                            color: AppColors.darkerGrey,
+                            color: AppColors.primaryColor,
                             fontWeightDelta: 1),
                       ),
                       Text("24-12-2000",
-                        style: Theme.of(context)
-                            .textTheme
-                            .bodyLarge,
+                        style: Theme.of(context).textTheme.headlineSmall,
                       )
                     ]),
               ),
@@ -185,7 +173,7 @@ class OrderContainer extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 10),
                 child: Icon(
                   Icons.arrow_forward_ios_rounded,
-                  size: 18,
+                  size: AppSizes.iconSm,
                 ))
             ]);
   }

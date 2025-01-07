@@ -8,7 +8,6 @@ import 'package:ubiqmerchant_version_2/utils/popups/full_screen_loader.dart';
 class OrderHistoryController extends GetxController {
   static OrderHistoryController get instance => Get.find();
 
-
   Rx orderList = Rx(null);
   getOrderHistoryList() async {
     try {

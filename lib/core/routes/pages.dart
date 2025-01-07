@@ -9,7 +9,6 @@ import 'package:ubiqmerchant_version_2/presentation/shop/bindings/order/shop_ord
 import 'package:ubiqmerchant_version_2/presentation/shop/screens/orders/orderhistoty_view.dart';
 import 'package:ubiqmerchant_version_2/presentation/splash/binding.dart';
 import 'package:ubiqmerchant_version_2/presentation/splash/splash_view.dart';
-
 part 'routes.dart';
 
 class AppPages {
@@ -32,7 +31,6 @@ class AppPages {
         name: _Paths.profileView,
         binding: ProfileBinding(),
         page: () => ProfileView()),
-
     GetPage(
         name: _Paths.shopOrderHistory,
         binding:  ShopOrdersBinding(),
