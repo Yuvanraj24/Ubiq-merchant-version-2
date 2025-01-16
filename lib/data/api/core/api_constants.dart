@@ -12,7 +12,7 @@ class ApiConstants {
   static const String logout = "/merchant/logout";
 
   // Store
-  static const String  storeList = "/merchant/merchant-item-list";
+  static const String  storeItemsList = "/merchant/merchant-item-list";
 
   // Cart
   static const String addToCart = "/merchant/merchant-add-to-cart";
