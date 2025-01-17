@@ -3,8 +3,6 @@ class ApiConstants {
   /// Api Base URL
   static const String baseUrl = "https://borc-template.coologeex.com/api";
 
-
-
   /// Api - Endpoints
 
   // Authentication
@@ -30,11 +28,9 @@ class ApiConstants {
   // Notification
   static const String notificationList = "/merchant/merchant-customer-notification-list";
 
-
   // Customers
   static const String addCustomer = "/merchant/merchant-customer";
   static const String customerList = "/merchant/merchant-customer-list";
-
 
   //Address
   static const String createCustomerAddress = "/merchant/merchant-customer-delivery-address";
@@ -50,7 +46,6 @@ class ApiConstants {
   // Profile
   static const String getProfile = "/merchant/merchant-profile";
 
-
 }
 
 class APiEndPointsConstants {
@@ -65,7 +60,5 @@ class APiConstantsQueryWords {
   static const String itemName = "item_name";
   static const String barcode = "barcode";
   static const String appType = "app_type";
-
-
 
 }

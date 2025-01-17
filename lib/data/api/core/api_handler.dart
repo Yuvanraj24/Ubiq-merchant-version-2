@@ -13,6 +13,7 @@ class ApiHandler {
   }) async {
     final uri = Uri.parse(ApiConstants.baseUrl + endpoint)
         .replace(queryParameters: queryParameters);
+    print("Get URL ---> $uri");
     try {
       final response =
           await http.get(uri, headers: headers ?? _defaultHeaders()).timeout(
